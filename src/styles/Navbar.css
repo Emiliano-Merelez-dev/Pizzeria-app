@@ -1,0 +1,29 @@
+.navbar {
+    position: relative;
+    padding: 1rem;
+  }
+  
+  .hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    gap: 5px;
+  }
+  
+  .line {
+    background-color: black;
+    height: 3px;
+    border-radius: 3px;
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    margin-top: 10px;
+  }
+  

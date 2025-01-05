@@ -1,0 +1,116 @@
+/* Contenedor del menú */
+.menu-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  opacity: 0; /* Ocultamos inicialmente para la animación */
+  animation: fadeInUp 1s ease-in-out forwards; /* Animación para que aparezca */
+}
+
+/* Estilos para los botones de navegación */
+.menu-navigation-buttons {
+  display: flex;
+  justify-content: center; /* Centra los botones */
+  gap: 20px; /* Espacio entre los botones */
+  margin-top: 30px; /* Separación respecto al menú */
+}
+
+.menu-navigation-buttons button {
+  background-color: #d39127; /* Verde atractivo */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-navigation-buttons button:hover {
+  background-color: #a44f1a; /* Verde más oscuro */
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}
+
+
+/* Estilos de los elementos del menú */
+.menu-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  opacity: 0; /* Ocultamos inicialmente para la animación individual */
+  transform: translateY(20px); /* Posición inicial desplazada hacia abajo */
+  animation: slideUp 0.6s ease-in-out forwards; /* Animación de deslizamiento */
+}
+
+.menu-item:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.menu-item:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.menu-item:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+/* Animación para los elementos del menú */
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Posición final */
+  }
+}
+
+/* Animación para el contenedor del menú */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Estilos para la descripción y precio */
+.menu-item-description {
+  margin: 10px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.menu-item-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* Estilos para las imágenes de las pizzas */
+.menu-item-image {
+  width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px; /* Espacio entre la imagen y el precio */
+}
+
+/* Botón para agregar a favoritos */
+.menu-item button {
+  background-color: #a24636;
+  color: white;
+  border: none;
+  padding: 10px 8px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px; /* Agrega un margen superior para separarlo del contenido anterior */
+}
+
+.menu-item button:hover {
+  background-color: #c6290d;
+}
