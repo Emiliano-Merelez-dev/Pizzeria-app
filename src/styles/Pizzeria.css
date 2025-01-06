@@ -6,19 +6,9 @@
   width: 100%;
   height: 100vh; /* Ocupa toda la altura de la ventana */
   overflow: hidden;
-}
-
-/* Imagen de fondo */
-.inicio-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("public/images/pizzeria.jpg") no-repeat center center;
-  background-size: cover; /* Asegura que la imagen ocupe todo el fondo */
-  z-index: -1; /* Envía la imagen al fondo */
+  background: linear-gradient(45deg, orange, yellow, red, orange);
+  background-size: 400% 400%; /* Aumentamos el tamaño del fondo para dar efecto de movimiento */
+  animation: gradientMove 8s infinite linear; /* Animación suave y continua */
 }
 
 /* Contenido de bienvenida */
@@ -40,6 +30,19 @@
   font-family: "Arial", sans-serif;
   margin: 0;
   animation: slideIn 1.5s ease-out forwards; /* Animación de deslizamiento */
+}
+
+/* Animación de gradiente en movimiento */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%; /* Comienza en la posición inicial */
+  }
+  50% {
+    background-position: 100% 50%; /* Gradiente se desplaza completamente a la derecha */
+  }
+  100% {
+    background-position: 0% 50%; /* Vuelve a la posición inicial */
+  }
 }
 
 /* Animación para el título */

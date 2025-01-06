@@ -1,4 +1,78 @@
-/* Estilos generales */
+/* Estilos específicos para MasInfo */
+.masinfo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding: 2rem;
+}
+
+.masinfo-card {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra por defecto */
+  max-width: 900px;
+  width: 100%;
+  transition: box-shadow 0.3s ease; /* Suaviza el cambio de sombra */
+}
+
+.masinfo-card:hover {
+  box-shadow: 0px 12px 18px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
+}
+
+.masinfo-image {
+  width: 50%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.masinfo-details {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50%;
+}
+
+.masinfo-details h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.masinfo-details p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #555;
+  text-align: left;
+}
+
+.masinfo-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff5733;
+  margin-bottom: 1rem;
+}
+
+.masinfo-details button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #d5a138;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.masinfo-details button:hover {
+  background-color: #c35017;
+}
+
+/* Reglas generales, ajustadas para evitar interferencia */
 body {
   margin: 0;
   padding: 0;
@@ -7,7 +81,6 @@ body {
   color: #333;
 }
 
-/* Títulos */
 h1 {
   color: #ff6347; /* Color naranja para darle vida */
   text-align: center;
@@ -19,7 +92,6 @@ h2 {
   text-align: center;
 }
 
-/* Contenedor principal */
 .container {
   display: flex;
   flex-direction: column;
@@ -27,7 +99,6 @@ h2 {
   padding: 20px;
 }
 
-/* Navbar estilos */
 .navbar {
   background-color: #fafba4;
   color: white;
@@ -36,7 +107,6 @@ h2 {
   font-size: 1.2rem;
 }
 
-/* Lista de pizzas favoritas */
 ul {
   list-style-type: none;
   padding: 0;
@@ -46,7 +116,6 @@ ul {
   align-items: center;
 }
 
-/* Estilo de las pizzas favoritas */
 li {
   background-color: #fff;
   border: 1px solid #ddd;
@@ -66,7 +135,6 @@ li:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo de botones */
 button {
   margin-left: 10px;
   background-color: #fc7760;
@@ -83,7 +151,6 @@ button:hover {
   transform: scale(1.1);
 }
 
-/* Título principal */
 .title {
   text-align: center;
   margin-top: 20px;
@@ -91,7 +158,6 @@ button:hover {
   color: #333;
 }
 
-/* Menú de opciones */
 .menu-container {
   display: flex;
   justify-content: center;
@@ -99,7 +165,6 @@ button:hover {
   margin-top: 30px;
 }
 
-/* Estilo de cada item de menú */
 .menu-item {
   background-color: white;
   border: 1px solid #ddd;
