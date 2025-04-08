@@ -8,16 +8,21 @@
   animation: fadeInUp 1s ease-in-out forwards; /* Animación para que aparezca */
 }
 
-/* Estilos para los botones de navegación */
 .menu-navigation-buttons {
   display: flex;
-  justify-content: center; /* Centra los botones */
-  gap: 20px; /* Espacio entre los botones */
-  margin-top: 30px; /* Separación respecto al menú */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  max-width: 500px; /* Nuevo: para que los botones no se expandan más de lo necesario */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .menu-navigation-buttons button {
-  background-color: #d39127; /* Verde atractivo */
+  background-color: #d39127;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -26,12 +31,19 @@
   font-size: 1rem;
   font-weight: bold;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  max-width: 200px;      /* Nuevo: ancho máximo del botón */
+  width: 100%;           /* Ocupa todo el ancho disponible del contenedor sin pasarse */
+  text-align: center;
+  white-space: nowrap;
+  flex: 1 1 150px;       /* Nuevo: flex con mínimo 150px */
 }
 
+
 .menu-navigation-buttons button:hover {
-  background-color: #a44f1a; /* Verde más oscuro */
-  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+  background-color: #a44f1a;
+  transform: scale(1.05);
 }
+
 
 
 /* Estilos de los elementos del menú */

@@ -72,6 +72,50 @@
   background-color: #c35017;
 }
 
+@media (max-width: 768px) {
+  .masinfo-card {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .masinfo-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .masinfo-details {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+  }
+
+  .masinfo-details h1,
+  .masinfo-details p,
+  .masinfo-price {
+    text-align: center;
+    word-break: break-word;
+  }
+
+  .masinfo-details h1 {
+    font-size: 1.5rem;
+  }
+
+  .masinfo-details p {
+    font-size: 1rem;
+  }
+
+  .masinfo-details button {
+    align-self: center;
+    width: fit-content;
+  }
+}
+
+
 /* Reglas generales, ajustadas para evitar interferencia */
 body {
   margin: 0;
@@ -155,7 +199,7 @@ button:hover {
   text-align: center;
   margin-top: 20px;
   font-size: 2.5rem;
-  color: #333;
+  color: #e5ff00;
 }
 
 .menu-container {

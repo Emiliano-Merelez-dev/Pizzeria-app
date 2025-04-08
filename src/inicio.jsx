@@ -8,7 +8,8 @@ export const Inicio = () => {
   return (
     <>
       <div className="inicio-container">
-          <h1 className="title">Bienvenido a la pizzería</h1>
+        <img src="/images/cart-pizza.jpg" alt="fondo" className="fondo-completo" />
+        <h1 className="title">Bienvenido a la pizzería</h1>
         <Navbar favorites={favorites} />
         <div className="welcome-content">
         </div>

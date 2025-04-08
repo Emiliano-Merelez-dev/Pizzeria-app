@@ -13,6 +13,7 @@ const Menu = () => {
   const pizzas = useSelector((state) => state.items.items);  // Cambia 'state.items.items' según tu estructura
 
   return (
+    <>
     <div className="menu-container">
       {pizzas.map((pizza) => (
         <div className="menu-item" key={pizza.id}>
@@ -31,12 +32,12 @@ const Menu = () => {
           </button>
         </div>
       ))}
-
-      <div className="menu-navigation-buttons">
+       </div>
+        <div className="menu-navigation-buttons">
         <button onClick={() => navigate('/inicio')}>Volver al inicio</button>
         <button onClick={() => navigate('/favorites')}>Ir a mis favoritos</button> 
-      </div>
-    </div>
+       </div>
+    </>
   );
 };
 
